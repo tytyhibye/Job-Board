@@ -9,7 +9,7 @@ namespace JobBoard.Contollers
     [HttpGet("/jobs")]
     public ActionResult Index()
     {
-      return View(Jobs.JobList);
+      return View(); //Contracts.ContractList
     }
 
     [HttpGet("/jobs/new")]
@@ -19,9 +19,9 @@ namespace JobBoard.Contollers
     }
 
     [HttpPost("/jobs")]
-    public ActionResult Create(string title, string description, string pay)
+    public ActionResult Create(string title, string description, string pay, string phone)
     {
-    Jobs newJob = new Jobs(title, description, pay)
+    Jobs newContract = new Jobs(title, description, pay, phone);
     return RedirectToAction("Index");
     }
   }

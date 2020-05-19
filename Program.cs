@@ -1,6 +1,6 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
-using.JobBoard.Models;
+using JobBoard.Models;
 
 namespace JobBoard
 {
