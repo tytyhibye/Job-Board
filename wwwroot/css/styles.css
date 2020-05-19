@@ -21,7 +21,7 @@
 }
 body {
   background-color: green;
-  background: linear-gradient(rgb(0, 0, 0), rgb(230, 255, 1), rgba(0, 0, 0, 0.753));
+  background: linear-gradient(rgb(0, 0, 0), rgb(255, 208, 1), rgba(0, 0, 0, 0.753));
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover;
@@ -47,4 +47,8 @@ color: whitesmoke;
 }
 #center {
   text-align: center;
+  list-style-position: inside;
+  color: whitesmoke;
+  list-style-type: circle;
+  padding: 1%;
 }
