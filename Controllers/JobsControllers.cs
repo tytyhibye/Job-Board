@@ -9,7 +9,7 @@ namespace JobBoard.Controllers
     [HttpGet("/jobs")]
     public ActionResult Index()
     {
-      return View(); //Contracts.ContractList
+      return View(Jobs.JobList);
     }
 
     [HttpGet("/CreateForm")]
@@ -21,8 +21,8 @@ namespace JobBoard.Controllers
     [HttpPost("/jobs")]
     public ActionResult Create(string title, string description, string pay, string phone)
     {
-    Jobs newContract = new Jobs(title, description, pay, phone);
-    return RedirectToAction("Index");
+      Jobs newContract = new Jobs(title, description, pay, phone);
+      return RedirectToAction("Index");
     }
   }
 }
