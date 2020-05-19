@@ -2,9 +2,9 @@ using Microsoft.AspNetCore.Mvc;
 using JobBoard.Models;
 using System.Collections.Generic;
 
-namespace JobBoard.Contollers
+namespace JobBoard.Controllers
 {
-  public class JobsContoller : Controller
+  public class JobsController : Controller
   {
     [HttpGet("/jobs")]
     public ActionResult Index()
@@ -12,8 +12,8 @@ namespace JobBoard.Contollers
       return View(); //Contracts.ContractList
     }
 
-    [HttpGet("/jobs/new")]
-    public ActionResult CreatForm()
+    [HttpGet("/CreateForm")]
+    public ActionResult CreateForm()
     {
       return View();
     }
