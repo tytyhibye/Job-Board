@@ -18,5 +18,10 @@ namespace JobBoard.Models
       Pay = pay;
       JobList.Add(this);
     }
+
+    public static void ClearAll()
+      {
+        JobList.Clear();
+      }
   }
 }

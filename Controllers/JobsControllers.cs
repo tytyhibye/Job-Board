@@ -24,5 +24,12 @@ namespace JobBoard.Controllers
       Jobs newContract = new Jobs(title, description, pay, phone);
       return RedirectToAction("Index");
     }
+
+    [HttpPost("/jobs/delete")]
+    public ActionResult DeleteAll()
+    {
+      Jobs.ClearAll();
+      return View();
+    }
   }
 }
